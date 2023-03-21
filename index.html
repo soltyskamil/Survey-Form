@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+    <body>
+
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+                <div class="container">
+                    <form id="survey-form">
+                        <div class="form-group">
+                                <label id="name-label">Write your name</label>
+                                <input class="name" type="text" required placeholder="Write your name">
+                        </div>
+                        <div class="form-group">
+                                <label id="email-label">Write your email</label>
+                                <input class="email-class" id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="Write your email" required>
+                        </div>
+                        <div class="form-group">
+                                <label id="number-label">Write your age</label>
+                                <input class="age-class" id="number" type="number" min="10" max="120" placeholder="Write your age" pattern="[0-9]">
+                        </div>
+                        <div class="form-group">
+                            <p>Which option best describes your current role?</p>
+                            <select id="dropdown"  class="option-class">
+                                <label>
+                                    <option value="">Select current role</option>
+                                </label>
+                                <label>
+                                    <option value="">Student</option>
+                                </label>
+                                <label>
+                                    <option value="">Full time job</option>
+                                </label>
+                                <label>
+                                    <option value="">Full time learner</option>
+                                </label>
+                                <label>
+                                    <option value="">Prefer not to say</option>
+                                </label>
+                                <label>
+                                    <option value="">Other</option>
+                                </label>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <p>Would you recommend my survey to a friend?</p>
+                            <label><input type="radio" name="options" value="Definetely">Definetely</input></label>
+                            <label><input type="radio" name="options" value="Maybe">Maybe</input></label>
+                            <label><input type="radio" name="options" value="Not sure">Not sure</input></label>
+                        </div>
+                        <div class="form-group">
+                        <p>Why did u start coding?</p>
+                        <select  class="option-class">
+                            <label>
+                                <option value="">Select an option</option>
+                            </label>
+                            <label>
+                                <option value="">I like to learn new things</option>
+                            </label>
+                            <label>
+                                <option value="">I'm doing it for fun</option>
+                            </label>
+                            <label>
+                                <option value="">I'm doing it because of job purposes</option>
+                            </label>
+                        </select>
+
+                        </div>
+                        <div class="form-group">
+                            <p>What would you like to see improved? (Check all that apply)</p>
+                            <label><input type="checkbox" value="Front-end Projects">Front-end Projects</input></label>
+                            <label><input type="checkbox" value="Back-end Projects">Back-end Projects</input></label>
+                            <label><input type="checkbox" value="Data Visualization">Data Visualization</input></label>
+                            <label><input type="checkbox" value="Challenges">Challenges</input></label>
+                            <label><input type="checkbox" value="Open Source Community">Open Source Community</input></label>
+                            <label><input type="checkbox" value="Gitter help rooms">Gitter help rooms</input></label>
+                        </div>
+                        <div class="form-group">
+                            <p>Any comments or suggestions?</p>
+                            <textarea name="" id="" cols="30" rows="3" class="textarea-class" placeholder="Enter your comment here.."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button id="submit" type="submit" class="button-class">Submit</button>
+                        </div>
+                    </form>
+            </div>
+    </body>
+</html>
